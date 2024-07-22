@@ -1,0 +1,44 @@
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 40px;
+}
+
+.footer {
+    color: white;
+    background-color: #0f0f0f;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mainFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    color: rgb(151, 151, 151);
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+.linkContainer a {
+    text-decoration: none;
+}
+
+.linkContainer img {
+    width: 30px;
+    transform: scale(1);
+    transition: 0.1s ease-in-out;
+}
+
+.linkContainer img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+}

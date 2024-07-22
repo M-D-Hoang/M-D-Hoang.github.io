@@ -1,38 +1,347 @@
 .App {
-  text-align: center;
+    text-align: center;
+    background-color: #1b1b1b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+    width: 100%;
+    padding: 150px 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    font-size: 50px;
+    font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+#home {
+    min-height: 100vh;
+    padding-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.scroll-container.animated{
+    padding-top: 50px;
+    opacity: 1;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.scroll-container.start {
+    height: 500px;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    transition-delay: 2s;
+}
+
+.scroll {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 200;
+    color:#D8E9A8
+}
+
+.scroll.start{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.line-down{
+    top: 0;
+    background-color: #D8E9A8;
+    width: 1px;
+    height: 0;
+}
+
+.line-down.start{
+    height: 400px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transition-delay: 2s;
+}
+
+#about {
+    gap: 100px;
+    background-color: #242424;
+}
+
+#about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.profile {
+    width: 250px;
+    border-radius: 50%;
+}
+
+#about .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+
+#about .description {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: left;
+    max-width: 86%;
+}
+
+#about .description a {
+    color: #4e9f3d;
+    background: linear-gradient(to bottom, #242424 50%, #4e9f3d 50%);
+    background-size: 100% 200%;
+    padding: 0 3px;
+    transition: 0.2s ease-in-out;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+    width: max-content;
+}
+
+#about .description a:hover {
+    background-position: bottom;
+    color: white;
+}
+
+#about .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 40px;
+}
+
+#about.right a {
+    scale: 1;
+    transition: 0.25s ease-in-out;
+}
+
+#about a:hover {
+    scale: 0.95;
+    color: #d8e9a8;
+    transition: 0.25s ease-in-out;
+}
+
+#about i {
+    font-size: 80px;
+    background-size: 200%;
+    transition: 0.25s ease-out;
+}
+
+#about i p {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+#projects {
+    gap: 150px;
+}
+
+.project {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project.right {
+    flex-direction: row-reverse;
+}
+
+.project-thumbnail {
+    max-width: 50%;
+}
+
+.project-image {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.25s ease-in-out;
+}
+
+.project .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    transition: 0.25s ease-in-out;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.project-description .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-description h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    color: #4e9f3d;
+}
+
+.project-description h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    color: #d8e9a8;
+}
+
+.project-description p {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.project-description .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-description .technologies {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project .link {
+    color: white;
+    background: linear-gradient(to left, #1b1b1b 51%, #4e9f3d 49%) right;
+    background-size: 200%;
+    transition: 0.25s ease-out;
+    padding: 0 12px 3px 10px;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    text-align: left;
+    width: max-content;
+    border-left: #4e9f3d 1px solid;
+}
+
+.project .link:hover {
+    background-position: left;
+    color: white;
+}
+
+#contact{
+    background-color: #131313;
+}
+
+.animated {
+    opacity: 0;
+}
+
+.fade-in.start {
+    animation: fade 0.5s cubic-bezier(0, 0, 0.5, 1) forwards;
+}
+
+.fade-in.delay.start {
+    animation: fade 0.5s cubic-bezier(0, 0, 0.5, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+.fade-in-left.start {
+    animation: fade-in-left 0.5s cubic-bezier(0, 0, 0.5, 1) forwards;
+}
+
+.fade-in-left.start {
+    animation: fade-in-left 0.5s cubic-bezier(0, 0, 0.5, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+.fade-in-right.start {
+    animation: fade-in-right 0.5s cubic-bezier(0, 0, 0.5, 1) forwards;
+}
+
+.fade-in-right.delay.start {
+    animation: fade-in-right 0.5s cubic-bezier(0, 0, 0.5, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(1em) scale(0.9) rotateX(-60deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotateX(0deg);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-2em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(2em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
