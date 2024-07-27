@@ -1,6 +1,7 @@
 {
   "name": "mdh",
   "version": "0.1.0",
+  "homepage": "https://M-D-Hoang.github.io",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.5.1",
