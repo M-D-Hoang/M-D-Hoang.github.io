@@ -9,7 +9,8 @@ export function ContactForm() {
 
         <form onSubmit={handleSubmit} className={styles.form + " animated fade-in"}>
             <p className={styles.description}>
-                Questions? Comments? Insults? Hit me up!
+                Questions? Comments? Insults? <br />
+                Want to work together?
             </p>
 
             <input

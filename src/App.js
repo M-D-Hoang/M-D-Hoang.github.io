@@ -3,7 +3,7 @@ import './App.css';
 import { Navbar } from './components/Navbar/Navbar.js';
 import { ContactForm } from './components/ContactForm/ContactForm.js';
 import { Footer } from './components/Footer/Footer.js';
-import profile from "./assets/images/65299efead09404cd6825d457407dfd7.png";
+import profile from "./assets/images/profile.png";
 import betterbc from "./assets/images/betterbc.png";
 import meod from "./assets/images/meod.png";
 import fmp from "./assets/images/fmp.png";
@@ -43,7 +43,7 @@ function App() {
             <img src={profile} alt="profile" className='profile' />
             <div className="description">
               <p>
-                Weekend warrior and full time nerd, I like to dive deeply into anything that piques my interest. I have a technical DEC in Computer Science Technology from <a target="_blank" rel="noopener noreferrer" href="https://www.dawsoncollege.qc.ca/">Dawson College</a> and have enjoyed serving in the <a target="_blank" rel="noopener noreferrer" href="https://forces.ca/en/career/infanteer/">Canadian Army Reserves</a> since 2019. 
+                Weekend warrior and full time nerd, I like to dive deeply into anything that piques my interest. I have a technical DEC in Computer Science from <a target="_blank" rel="noopener noreferrer" href="https://www.dawsoncollege.qc.ca/">Dawson College</a> and have enjoyed serving in the <a target="_blank" rel="noopener noreferrer" href="https://forces.ca/en/career/infanteer/">Canadian Army Reserves</a> since 2019. 
               </p>
               <p>
                 As a software and web developer, I am passionate about efficient and intuitive design. Making use of creativity and employing technical nerdery to bring ideas to life is what motivates me.
